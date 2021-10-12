@@ -1,0 +1,76 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("./images/pattern-background-desktop.svg");
+}
+.main_content{
+    width: 50%;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    font-size: 16px;
+    font-family:'Red Hat Display', arial, serif;;
+}
+
+@media screen and (max-width: 600px){
+    .main_content{
+        width: 100%;
+        max-width: 200px;
+    }
+    .card_image{
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+    }
+    .payment_plan_container{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    .payment_plan{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 0;
+    }
+}
+.summary{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 0 2rem; */
+}
+.payment_plan_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 0.5rem; */
+    background-color: hsl(225, 100%, 98%);
+    /* border: 5px solid red; */
+   
+}
+.payment_plan{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 7rem;
+}
+.payment_plan div{
+    padding-left: 0.5rem;
+    /* line-height: 0.2rem; */
+}
+
+button{
+    margin: 1.2rem 1rem 0 1rem;
+    padding: 0.8rem;
+    /* width: 320px; */
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    border: none;
+    border-radius: 12px;
+}
